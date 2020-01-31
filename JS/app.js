@@ -26,15 +26,8 @@ class alienShips {
 
 }
 
-// function randomSpec(){
-//   for(let i=0; i <= 6; i++){
-// //     while (i < ) {
-// //   text += "The number is " + i;
-// //   i++;
-// // }
-//   }
-
-//   Math.random()
-// }
+function attack (){
+ let remain= this.hull -(this.firepower*this.accuracy)
+}
 
 console.log("this is working")
