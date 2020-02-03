@@ -1,6 +1,6 @@
 class gameManager{
   constructor(){
-this.turn =1;
+this.turn =false;
 
   }
 }
@@ -9,27 +9,31 @@ this.turn =1;
 class ussSwarch {
 constructor(){
 
-  this.hull= 20;
-  this.firepower= 5;
-  this.accuracy= .7;
+ const hull= 20;
+  const firepower= 5;
+  const accuracy= .7;
   }
+
 }
 
 class alienShips {
   constructor(){
 
-  this.maxHull= 6;
-  this.minHull =3;
+  const maxHull= 6;
+  const minHull =3;
 
-  this.maxFirepower=4 ;
-  this.minFirepower=2 ;
+  const maxFirepower=4;
+  const minFirepower=2;
 
-  this.maxAccuracy=.6 ;
-  this.minAccuracy= .8;
+  const maxAccuracy=.6;
+  const minAccuracy=.8;
 
-  this.hull= Math.random() * (max - min) + min;
-  this.firepower= Math.random() * (max - min) + min;
-  this.accuracy= Math.random() * (max - min) + min;
+  this.hull= getRandomIntInclusive( minHull ,maxHull);
+  console.log("haul is " + this.hull)
+  this.firepower= getRandomIntInclusive(minFirepower, maxFirepower);
+  console.log(this.firepower)
+  this.accuracy= getRandomIntInclusive(minAccuracy, maxAccuracy);
+  console.log(this.accuracy)
   }
 
 }
@@ -46,5 +50,14 @@ function attack (){
  let remain= this.hull -(this.firepower*this.accuracy)
  return remain;
 }
+
+let alienShip1 = new alienShips();
+let alienShip2 = new alienShips();
+let alienShip3 = new alienShips();
+let alienShip4 = new alienShips();
+let alienShip5 = new alienShips();
+let alienShip6 = new alienShips();
+
+
 
 console.log("this is working")
