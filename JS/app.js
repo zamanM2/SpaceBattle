@@ -31,11 +31,10 @@ class alienShips {
   this.hull= getRandomIntInclusive( minHull ,maxHull);
   console.log("haul is " + this.hull)
   this.firepower= getRandomIntInclusive(minFirepower, maxFirepower);
-  console.log(this.firepower)
+  console.log("firepower is " + this.firepower)
   this.accuracy= getRandomIntInclusive(minAccuracy, maxAccuracy);
-  console.log(this.accuracy)
+  console.log("accuracy is "+ this.accuracy)
   }
-
 }
 
 
