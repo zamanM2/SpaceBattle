@@ -1,3 +1,11 @@
+class gameManager{
+  constructor(){
+this.turn =1;
+
+  }
+}
+
+
 class ussSwarch {
 constructor(){
 
@@ -26,8 +34,17 @@ class alienShips {
 
 }
 
+
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
 function attack (){
  let remain= this.hull -(this.firepower*this.accuracy)
+ return remain;
 }
 
 console.log("this is working")
